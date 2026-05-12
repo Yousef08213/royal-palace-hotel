@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakta Royal Palace Hotel i Malmö. Skicka ett meddelande eller ring oss på +46-986-54 11.">
+  <title>Kontakta – Royal Palace Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="loga.webp" alt="Royal Palace Hotel logotyp">
+      </div>
+      <img class="hero-img" src="pool.webp" alt="Royal Palace Hotel pool">
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-current">Kontakta</span>
+      <button class="hamburger" aria-label="Oppna meny" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Välkommen</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li><a href="hitta.html">Hitta</a></li>
+      <li><a href="kontakta.html" class="active">Kontakta</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Kontakta oss</h1>
+    <div class="two-col">
+
+      <div class="card">
+        <h2>Skicka ett meddelande</h2>
+        <div class="form-grid">
+          <div class="form-group full-width">
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" name="namn" placeholder="Ditt namn">
+          </div>
+          <div class="form-group full-width">
+            <label for="epost">E-post</label>
+            <input type="email" id="epost" name="epost" placeholder="din@epost.se">
+          </div>
+          <div class="form-group full-width">
+            <label for="meddelande">Meddelande</label>
+            <textarea id="meddelande" name="meddelande" rows="5" placeholder="Skriv ditt meddelande här..."></textarea>
+          </div>
+        </div>
+        <button class="btn" type="button">Skicka</button>
+      </div>
+
+      <div class="card">
+        <h2>Öppettider</h2>
+        <ul class="info-list">
+          <li>• Måndag till fredag: dygnet runt</li>
+          <li>• Lördag: 07.00 – 22.00</li>
+          <li>• Söndag: 09.00 – 20.00</li>
+        </ul>
+        <address>
+          <strong>Hotell Royal Palace</strong><br>
+          Nyagatan 42<br>
+          211 43 Malmö<br><br>
+          +46-986-54 11<br>
+          <a href="mailto:Royalpalace@gmail.com">Royalpalace@gmail.com</a>
+        </address>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <address>Hotell Royal Palace &nbsp;|&nbsp; Nyagatan 42, 211 43 Malmö &nbsp;|&nbsp; +46-986-54 11</address>
+  </footer>
+
+</body>
+</html>

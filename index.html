@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Välkommen till Royal Palace Hotel i Malmö. Centralt beläget nära Triangeln med lyxiga rum och förstklassig service.">
+  <title>Välkommen – Royal Palace Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="loga.webp" alt="Royal Palace Hotel logotyp">
+      </div>
+      <img class="hero-img" src="hotel.webp" alt="Royal Palace Hotel exteriör">
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-current">Välkommen</span>
+      <button class="hamburger" aria-label="Oppna meny" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Välkommen</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li><a href="hitta.html">Hitta</a></li>
+      <li><a href="kontakta.html">Kontakta</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="two-col">
+      <div class="card">
+        <h1>Välkommen</h1>
+        <p>
+          Hotellet ligger mitt i hjärtat av vackra Malmö, bara några minuter från Gustav
+          och med utsikt över det glittrande vattnet som omfamnar staden. Här bor du
+          med närhet till både stadens puls och stilla promenader.
+        </p>
+        <p>
+          Triangelnstationen ligger på bekvämt gångavstånd, och oavsett om du reser
+          för nöje eller arbete har du alltid det bästa av Malmö precis runt hörnet.
+        </p>
+        <p>
+          Hos oss möts du av en varm atmosfär, omtänksam service och en plats där du
+          kan känna dig som hemma från första stund. Slå dig ner i vår lobby med en
+          kopp kaffe, njut av lugnet i ditt rum och låt oss ta hand om resten.
+        </p>
+        <p>Vi ser fram emot att göra din vistelse minnesvärd – varmt välkommen.</p>
+      </div>
+
+      <div class="card">
+        <h2>Öppettider</h2>
+        <ul class="info-list">
+          <li>• Måndag till fredag: dygnet runt</li>
+          <li>• Lördag: 07.00 – 22.00</li>
+          <li>• Söndag: 09.00 – 20.00</li>
+        </ul>
+        <address>
+          <strong>Hotell Royal Palace</strong><br>
+          Nyagatan 42<br>
+          211 43 Malmö<br><br>
+          +46-986-54 11<br>
+          <a href="mailto:info@royalpalace.se">info@royalpalace.se</a>
+        </address>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <address>Hotell Royal Palace &nbsp;|&nbsp; Nyagatan 42, 211 43 Malmö &nbsp;|&nbsp; +46-986-54 11</address>
+  </footer>
+
+</body>
+</html>

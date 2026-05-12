@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Boka rum på Royal Palace Hotel i Malmö. Välj rumstyp, incheckning och utcheckning enkelt online.">
+  <title>Boka – Royal Palace Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="loga.webp" alt="Royal Palace Hotel logotyp">
+      </div>
+      <img class="hero-img" src="pool.webp" alt="Royal Palace Hotel pool">
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-current">Boka</span>
+      <button class="hamburger" aria-label="Oppna meny" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Välkommen</a></li>
+      <li><a href="boka.html" class="active">Boka</a></li>
+      <li><a href="hitta.html">Hitta</a></li>
+      <li><a href="kontakta.html">Kontakta</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Boka rum</h1>
+    <div class="two-col">
+
+      <div class="card">
+        <h2>Bokningsformulär</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fornamn">Förnamn</label>
+            <input type="text" id="fornamn" name="fornamn" placeholder="Ditt förnamn">
+          </div>
+          <div class="form-group">
+            <label for="efternamn">Efternamn</label>
+            <input type="text" id="efternamn" name="efternamn" placeholder="Ditt efternamn">
+          </div>
+          <div class="form-group full-width">
+            <label for="rumstyp">Rumstyp</label>
+            <select id="rumstyp" name="rumstyp">
+              <option value="">Välj rumstyp</option>
+              <option value="enkel">Enkelrum</option>
+              <option value="dubbel">Dubbelrum</option>
+              <option value="svit">Svit</option>
+              <option value="familj">Familjerum</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="incheckning">Incheckning</label>
+            <input type="date" id="incheckning" name="incheckning">
+          </div>
+          <div class="form-group">
+            <label for="utcheckning">Utcheckning</label>
+            <input type="date" id="utcheckning" name="utcheckning">
+          </div>
+          <div class="form-group">
+            <label for="vuxna">Antal vuxna</label>
+            <select id="vuxna" name="vuxna">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="barn">Antal barn</label>
+            <select id="barn" name="barn">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" type="button">Skicka bokning</button>
+      </div>
+
+      <div class="card">
+        <h2>Om hotellet</h2>
+        <p>
+          Hotellet erbjuder mycket bra service och en trevlig upplevelse för alla gäster.
+          Det är ett lyxhotell där personalen alltid är vänlig och hjälpsam.
+        </p>
+        <p>
+          Rummen är bekväma och moderna, vilket gör att man kan koppla av och känna
+          sig som hemma. På hotellet finns också ett fint spa och en bastu där gästerna
+          kan njuta och ta det lugnt.
+        </p>
+        <p><strong>Vi erbjuder:</strong></p>
+        <ul class="services">
+          <li>&#x1F4F6;&nbsp; Gratis wifi</li>
+          <li>&#x1F373;&nbsp; Frukost ingår</li>
+          <li>&#x1F9D6;&nbsp; Spa och behandlingar</li>
+          <li>&#x1F9FC;&nbsp; Bastu</li>
+          <li>&#x1F3CA;&nbsp; Pool</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <address>Hotell Royal Palace &nbsp;|&nbsp; Nyagatan 42, 211 43 Malmö &nbsp;|&nbsp; +46-986-54 11</address>
+  </footer>
+
+</body>
+</html>
